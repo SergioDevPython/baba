@@ -231,6 +231,6 @@ elif menu == "Melhor Time da Semana":
 st.markdown("---")  # Linha separadora
 st.markdown("""
 <div style='text-align: center; color: grey;'>
-    <small>Desenvolvido por Sérgio Santos, © 2024</small>
+    <small>Desenvolvido por Sérgio Santos, (77)99921-1063 © 2024</small>
 </div>
 """, unsafe_allow_html=True)
