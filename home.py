@@ -28,7 +28,7 @@ def limpar_dados():
     config = collection_config.find_one({"_id": "config"})
     if config:
         ultima_limpeza = config["ultima_limpeza"]
-        if datetime.now() >= ultima_limpeza + timedelta(hours=12):
+        if datetime.now() >= ultima_limpeza + timedelta(hours=8):
             collection_pontuacao.delete_many({})
             collection_cartoes.delete_many({})
             collection_config.update_one({"_id": "config"}, {"$set": {"ultima_limpeza": datetime.now()}})
