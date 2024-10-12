@@ -226,3 +226,11 @@ elif menu == "Melhor Time da Semana":
         st.success(f"Melhor TIME da Semana foi o de : {atleta['_id']} com {atleta['total_pontos']} pontos.")
     else:
         st.warning("Nenhum ponto registrado esta semana.")
+
+
+st.markdown("---")  # Linha separadora
+st.markdown("""
+<div style='text-align: center; color: grey;'>
+    <small>Desenvolvido por Sérgio Santos, © 2024</small>
+</div>
+""", unsafe_allow_html=True)
