@@ -93,7 +93,7 @@ def sortear_times_com_configuracao(atletas_presentes, qtd_times):
     # Distribuir os jogadores restantes entre os times (respeitando o limite de 6 jogadores por time)
     for jogador in jogadores_restantes:
         for time in times:
-            if len(time) < 6:
+            if len(time) < 7:
                 time.append(jogador)
                 break
 
